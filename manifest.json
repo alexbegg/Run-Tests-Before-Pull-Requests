@@ -1,11 +1,11 @@
 {
-  "name": "PageAlerts!",
+  "name": "Run Tests Before Pull Requests",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "特定のページに行くとアラートを表示する。",
+  "description": "Google Chrome Extension for showing an alert to remind you to run tests on your code when you are making a pull request on Bitbucket.",
   "content_scripts": [
     {
-      "matches": ["http://example.com/*"],
+      "matches": ["https://bitbucket.org/*/pull-requests/new*"],
       "js": ["script.js"],
       "run_at": "document_start"
     }

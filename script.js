@@ -1,1 +1,2 @@
-alert('注意してください！！');
+alert("Don't forget to run your tests!");
+
